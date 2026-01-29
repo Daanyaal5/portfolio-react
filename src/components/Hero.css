@@ -1,0 +1,86 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, var(--dark-bg) 0%, var(--light-bg) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  z-index: 10;
+  animation: fadeInUp 1s ease;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.6);
+}
+
+/* Animated Background */
+.bg-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bg-animation span {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: rgba(99, 102, 241, 0.2);
+  animation: float 25s infinite;
+  border-radius: 50%;
+}
+
+.bg-animation span:nth-child(1) { left: 10%; animation-delay: 0s; }
+.bg-animation span:nth-child(2) { left: 20%; animation-delay: 2s; animation-duration: 30s; }
+.bg-animation span:nth-child(3) { left: 30%; animation-delay: 4s; }
+.bg-animation span:nth-child(4) { left: 40%; animation-delay: 6s; animation-duration: 20s; }
+.bg-animation span:nth-child(5) { left: 50%; animation-delay: 8s; }
+.bg-animation span:nth-child(6) { left: 60%; animation-delay: 10s; animation-duration: 35s; }
+.bg-animation span:nth-child(7) { left: 70%; animation-delay: 12s; }
+.bg-animation span:nth-child(8) { left: 80%; animation-delay: 14s; animation-duration: 28s; }
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+}
