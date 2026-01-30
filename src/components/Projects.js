@@ -28,13 +28,12 @@ function Projects() {
   }, []);
 
   const projects = [
-    /*
     {
-      title: 'Task Manager App',
-      tags: ['React', 'Firebase', 'CSS'],
-      description: 'A full-featured task management application with real-time updates, user authentication, and a clean, intuitive interface.',
-      link: '#'
-    },
+      title: 'My Tasks - Todo App',
+      tags: ['HTML', 'CSS (Tailwind)', 'JavaScript', 'LocalStorage'],
+      description: 'A modern, feature-rich todo application with full CRUD functionality, category-based organization, filtering, and local storage persistence. Works completely offline with a clean, responsive, mobile-friendly interface.',
+      link: 'https://github.com/Daanyaal5/to-do_app_list/tree/main'
+    },/*
     {
       title: 'Weather Dashboard',
       tags: ['JavaScript', 'API', 'HTML/CSS'],
